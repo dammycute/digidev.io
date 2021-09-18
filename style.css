@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: consolas;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(2, 2, 117);
+    padding: 15px;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 650;
+    font-family: consolas;
+    font-size: 17px;
+}
+
+nav {
+    display: flex;
+    width: 30rem;
+    justify-content: space-around;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li {
+    list-style: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    opacity: .3;
+    color: rgb(2, 2, 117);
+}
+
+.home-image {
+    position: relative;
+}
+
+.home-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(2, 2, 117);
+}
+
+.home-h {
+    font-size: 2rem;
+}
+
+.home-text p {
+    font-size: 1.2em;
+}
+
+.home-desc {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact-p {
+    background-color: rgb(2, 2, 117);
+    color: #fff;
+    padding: 10px;
+    width: 9em;
+    border: 0px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.about {
+    background-color: gainsboro;
+}
+
+.about-label {
+    padding-top: 1.2rem;
+    padding-bottom: 2rem;
+}
+
+.about-container h1 {
+    text-align: center;
+}
+
+.under {
+    display: block;
+    background: orangered;
+    width: 3rem;
+    height: 5px;
+    margin: .3rem auto;
+}
+
+.about-button {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.mission {
+    background-color: rgb(2, 2, 117);
+    color: #fff;
+    border: 0px;
+    font-size: 17px;
+    height: 100%;
+    padding: 1rem;
+}
+
+.vision {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.value {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#default-content {
+    background-color: rgb(2, 2, 117);
+    color: #fff;
+    height: auto;
+    padding: 3em;
+    font-size: 17px;
+}
+
+.vision-text,
+.value-text {
+    display: none;
+}
+
+.services {
+    padding: 2rem;
+}
+
+.service-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.services h1 {
+    padding-top: 1.2rem;
+    text-align: center;
+}
+
+.services h3 {
+    padding-bottom: 1rem;
+}
+
+.service-card1 {
+    border: 2px solid rgb(2, 2, 117);
+    background-color: rgb(2, 2, 117);
+    padding: 2rem;
+    margin: 1rem;
+    width: 21rem;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.service-card1:hover {
+    background-color: rgb(4, 4, 187);
+    color: #fff;
+}
+
+.card-img {
+    width: 70%;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.card-img img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.project {
+    background-color: rgb(2, 2, 117);
+}
+
+.project-img {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-img img {
+    width: 20rem;
+    height: 20rem;
+    opacity: 0.9;
+    box-shadow: 1px 1px 1px 2px gainsboro;
+    margin-bottom: 2rem;
+}
+
+.project-img img:hover {
+    box-shadow: 3px 3px 3px 3px gainsboro;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    padding: 3rem
+}
+
+.input,
+textarea {
+    padding: 18px 20px;
+    margin-bottom: 2rem;
+    border: 1.5px solid rgb(4, 4, 187);
+    border-radius: 6px;
+}
+
+.input:focus {
+    border: 0px;
+}
+
+.form .button {
+    padding: 12px 14px;
+    background-color: rgb(2, 2, 117);
+    border: 0px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.foot {
+    background-color: rgb(2, 2, 117);
+    padding: 3em;
+    color: #fff;
+}
+
+.foot-main {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot h4 {
+    padding-bottom: .8rem;
+    text-align: center;
+}
+
+.foot ol {
+    list-style: none;
+}
+
+.foot li {
+    padding: .6rem;
+}
+
+.foot li a {
+    color: #fff;
+}
+
+.foot .right {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 480px) {
+    .home-h {
+        font-size: 1.5rem;
+    }
+    .home-text p {
+        font-size: 1em;
+    }
+    .about-button {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .about-button {
+        width: 80%;
+        font-size: 14px;
+    }
+    .card-img {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .logo {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .about-button {
+        width: 40%;
+    }
+    nav {
+        display: none;
+    }
+    nav.show {
+        display: flex;
+        width: 10%;
+        height: 6rem;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-top: 3rem;
+        margin-right: 1rem;
+    }
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        padding: 3rem
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        margin: 0 auto;
+        padding: 3rem
+    }
+}
